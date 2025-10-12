@@ -1,0 +1,198 @@
+/* basics */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: rgb(0, 149, 255);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+.container {
+  max-width: 13%;
+  padding: 5px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+body {
+  width: 100%;
+  display: flex;
+}
+
+/* sideBar */
+.sideBar {
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  height: 100vb;
+  width: 100%;
+}
+
+/* top */
+.top {
+  display: flex;
+  justify-content: start;
+  margin: 10px 0 0px 2px;
+  height: 10%;
+}
+
+.logoIcon {
+  color: rgb(0, 149, 255);
+}
+
+div span {
+  display: none;
+}
+
+/* main */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+}
+
+
+/* mainContent */
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContent p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  animation: colorAnimation 3s ease-in-out infinite;
+}
+
+@keyframes colorAnimation {
+  0% {
+    color: rgb(0, 149, 255);
+  }
+  25% {
+    color: rgb(255, 0, 150);
+  }
+  50% {
+    color: rgb(0, 255, 100);
+  }
+  75% {
+    color: rgb(255, 100, 0);
+  }
+  100% {
+    color: rgb(0, 149, 255);
+  }
+}
+
+/* ===== RESPONSIVE MAINCONTENT ===== */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 20px;
+    min-height: 50vh;
+  }
+
+  .mainContent p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 15px;
+    min-height: 40vh;
+  }
+
+  .mainContent p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mainContent {
+    padding: 30px;
+    min-height: 60vh;
+  }
+
+  .mainContent p {
+    font-size: 3rem;
+  }
+}
+
+/* Desktop Devices */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .mainContent {
+    padding: 40px;
+    min-height: 70vh;
+  }
+
+  .mainContent p {
+    font-size: 4rem;
+  }
+}
+
+/* Large Desktop Devices */
+@media (min-width: 1440px) {
+  .mainContent {
+    padding: 50px;
+    min-height: 80vh;
+  }
+
+  .mainContent p {
+    font-size: 5rem;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1920px) {
+  .mainContent p {
+    font-size: 6rem;
+  }
+}
