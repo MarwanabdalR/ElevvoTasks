@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+body {
+  background: #352f5b;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 23px;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: all 3s ease;
+}
+
+div li {
+  background: #423a6f;
+  color: #fff;
+}
+
+button {
+  color: #352f5b;
+}
+
+/* Custom sections hooks */
+.site-header {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.feature-card:hover,
+.testimonial-card:hover,
+.pricing-card:hover {
+  transform: translateY(-2px);
+  transition: transform 200ms ease;
+}
+
+.site-footer {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0)
+  );
+}
